@@ -36,15 +36,15 @@ Each of these features was unlearned across three different architectural framew
 <div align="center">
   <div style="display: flex; justify-content: center; align-items: flex-start;">
     <div style="margin: 10px; text-align: center;">
-      <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="33%">
+      <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="3%">
       <div><em>MLP Results</em></div>
     </div>
     <div style="margin: 10px; text-align: center;">
-      <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="33%">
+      <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="3%">
       <div><em>FtFormer Results</em></div>
     </div>
     <div style="margin: 10px; text-align: center;">
-      <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="33%">
+      <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="3%">
       <div><em>ResNet Results</em></div>
     </div>
   </div>
