@@ -12,7 +12,8 @@ In this experiment, we first train a model to classify gender based on the celeb
 - **Unlearn Eyes:** Excluding the eye regions based on the provided annotations.
 - **Unlearn Noise+Eyes:** Simultaneously removing both the noise and the eyes.
 
-These tasks help us evaluate how the removal of specific features affects model performance and robustness.
+![Demostration of Image Unlearning](imgs/cv_unlearn_demo.png)
+*Description: This graph demonstrates the unlearning process applied to the celebA dataset.
 
 # Feature Unlearning: Leveraging Complex Model Architectures, Higher Feature Importance, and Correlation Analysis
  ## Expanded Model Architectures (Incorporating FtFormer and ResNet):
