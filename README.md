@@ -1,8 +1,8 @@
 This repository contains the experimental setup, code, and results for our paper on "Feature Unlearning: Theoretical Foundations and Practical Applications with Shuffling". In response to reviewer comments regarding the simplicity of our initial models, we have incorporated more complex models, namely FtFormer and ResNet, to demonstrate the robustness and scalability of our unlearning approach.
- # Feature Unlearning with CELCA: Removing a Feature from a Computer Vision Task
+ # Feature Unlearning with CelebA: Removing a Feature from a Computer Vision Task
  ## Dataset Overview
 
-The dataset used in this experiment consists of celebrity photographs, each accompanied by detailed annotations that specify the locations of background noise and the eyes. This rich spatial information enables precise targeting of these features, allowing us to accurately assess their impact on gender classification performance.
+TCelebFaces Attributes Dataset (CelebA) is an extensive collection of over 200K celebrity images, each annotated with 40 binary facial attributes. The dataset captures a wide range of pose variations and background complexities. It offers remarkable diversity and volume, featuring 10,177 unique identities, 202,599 face images, and detailed annotations that include 5 landmark locations along with 40 binary attribute labels per image.
 
 ## Experiment Description
 
