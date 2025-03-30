@@ -33,29 +33,25 @@ Each of these features was unlearned across three different architectural framew
 3. ResNet
 
 ### Results and Graphs
-<p align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="33%" style="margin-right: 10px;">
-        <br>
-        <em>MLP Results</em>
-      </td>
-      <td align="center">
-        <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="33%" style="margin-right: 10px;">
-        <br>
-        <em>FtFormer Results</em>
-      </td>
-      <td align="center">
-        <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="33%">
-        <br>
-        <em>ResNet Results</em>
-      </td>
-    </tr>
-  </table>
-  <br>
-  <strong>Overall Caption:</strong> Comparison of the unlearning task performance across different model architectures.
-</p>
+<div align="center">
+  <figure style="display: inline-block; margin: 10px;">
+    <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="33%">
+    <figcaption><em>MLP Results</em></figcaption>
+  </figure>
+  <figure style="display: inline-block; margin: 10px;">
+    <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="33%">
+    <figcaption><em>FtFormer Results</em></figcaption>
+  </figure>
+  <figure style="display: inline-block; margin: 10px;">
+    <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="33%">
+    <figcaption><em>ResNet Results</em></figcaption>
+  </figure>
+</div>
+<div align="center">
+  <p><strong>Overall Caption:</strong> Comparison of the unlearning task performance across different model architectures.</p>
+</div>
+
+
 ## Unlearning based on the Feature Correaltion
 
 We also conducted experiments on features with high correlation coefficients to understand the effects of unlearning interdependent features. These experiments were carried out using the same three architectural frameworks (MLP, FtFormer, ResNet)mentioned above. **Our algorithm demonstrates remarkable efficiency in unlearning the features with high correlation, a capability that is consistently observed across multiple architectural frameworks, including MLP, ResNet, and FtFormer.**
