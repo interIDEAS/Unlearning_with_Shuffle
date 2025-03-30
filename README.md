@@ -36,14 +36,14 @@ Highly correlated features in *CALI* (threshold = 0.8):
 - Latitude and Longitude: 0.925
 - AveRooms and AveBedrms: 0.848
   
-Features Unlearned: **Latitude,Longitude,AveBedrms**
+Features Unlearned: **Latitude, Longitude, AveBedrms**
 
 Highly correlated features in *CREDIT* (threshold = 0.8):
 - NumberOfTimes90DaysLate and NumberOfTime60-89DaysPastDueNotWorse: 0.991
 - NumberOfTime30-59DaysPastDueNotWorse and NumberOfTime60-89DaysPastDueNotWorse: 0.988
 - NumberOfTime30-59DaysPastDueNotWorse and NumberOfTimes90DaysLate: 0.983
   
-Features Unlearned: **NumberOfTimes90DaysLate,NumberOfTime30-59DaysPastDueNotWorse**
+Features Unlearned: **NumberOfTimes90DaysLate, NumberOfTime30-59DaysPastDueNotWorse**
 
 
 Highly correlated features in *MAGIC_TELE* (threshold = 0.8):
