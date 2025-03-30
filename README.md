@@ -33,14 +33,11 @@ Each of these features was unlearned across three different architectural framew
 3. ResNet
 
 ### Results and Graphs
-![MLP Results](imgs/different_feature_importance/TRI_mlp.pdf)
-*Description: Graph showing the impact of unlearning the top and least influential features using the MLP model.*
-![FtFormer Results](imgs/different_feature_importance/TRI_ftformer.pdf)
-*Description: Graph depicting the outcomes of feature unlearning on the FtFormer model, focusing on interdependent feature sets.*
-![ResNet Results](imgs/different_feature_importance/TRI_resnet.pdf)
-*Description: Visual outcomes of unlearning using the ResNet model across various feature sets.*
-
-
+<p align="center">
+  <img src="imgs/TRI_mlp.png" alt="Graph 1" width="30%" style="margin-right: 10px;">
+  <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="30%" style="margin-right: 10px;">
+  <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="30%">
+</p>
 
 ## Unlearning based on the Feature Correaltion
 
