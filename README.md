@@ -33,6 +33,7 @@ Each of these features was unlearned across three different architectural framew
 3. ResNet
 
 ### Results and Graphs
+The following graph presents the aggregated results from all datasets. For detailed information on each individual dataset, please refer to the *results_processed* folder.
 
 | <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="500px"> | <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="500px"> | <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="500px"> |
 |:---------------------------------------------------------------:|:---------------------------------------------------------------:|:---------------------------------------------------------------:|
