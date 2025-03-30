@@ -30,10 +30,35 @@ Each of these features was unlearned across three different architectural framew
 
 ## Unlearning based on the Feature Correaltion
 
-We also conducted experiments on features with high correlation coefficients to understand the effects of unlearning interdependent features. These experiments were carried out using the same three architectural frameworks mentioned above.
+We also conducted experiments on features with high correlation coefficients to understand the effects of unlearning interdependent features. These experiments were carried out using the same three architectural frameworks mentioned above. 
 
+Highly correlated features in **CALI** (threshold = 0.8):
+- Latitude and Longitude: 0.925
+- AveRooms and AveBedrms: 0.848
+Features Unlearned: **Latitude,Longitude,AveBedrms**
+
+Highly correlated features in **CREDIT** (threshold = 0.8):
+- NumberOfTimes90DaysLate and NumberOfTime60-89DaysPastDueNotWorse: 0.991
+- NumberOfTime30-59DaysPastDueNotWorse and NumberOfTime60-89DaysPastDueNotWorse: 0.988
+- NumberOfTime30-59DaysPastDueNotWorse and NumberOfTimes90DaysLate: 0.983
+Features Unlearned: **NumberOfTimes90DaysLate,NumberOfTime30-59DaysPastDueNotWorse**
+
+
+Highly correlated features in MAGIC_TELE (threshold = 0.8):
+- fConc: and fConc1:: 0.975
+- fSize: and fConc:: 0.847
+- fSize: and fConc1:: 0.804
+Features Unlearned: **fSize**
+
+Other datasets do not include features that exceed our set threshold.
+ 
 ### Results and Graphs
-Corresponding results for each experiment are provided in the form of graphs, which illustrate the impact of feature unlearning on model performance and behavior. These graphs are crucial for visualizing the trade-offs and outcomes of unlearning specific features.
+![CALI Latitude Results](imgs/CALI_Latitude.png)
+*Description: Graph showing the impact of unlearning the top and least influential features using the MLP model.*
+![CALI Longitude Results](imgs/CALI_Longtitude.png)
+*Description: Graph depicting the outcomes of feature unlearning on the FtFormer model, focusing on interdependent feature sets.*
+![CALI AveBedrms Results](imgs/CALI_Avgbed.png)
+*Description: Visual outcomes of unlearning using the ResNet model across various feature sets.*
 
 
 
