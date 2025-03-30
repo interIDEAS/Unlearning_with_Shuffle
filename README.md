@@ -34,23 +34,25 @@ Each of these features was unlearned across three different architectural framew
 
 ### Results and Graphs
 <div align="center">
-  <figure style="display: inline-block; margin: 10px;">
-    <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="32%">
-    <figcaption><em>MLP Results</em></figcaption>
-  </figure>
-  <figure style="display: inline-block; margin: 10px;">
-    <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="32%">
-    <figcaption><em>FtFormer Results</em></figcaption>
-  </figure>
-  <figure style="display: inline-block; margin: 10px;">
-    <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="32%">
-    <figcaption><em>ResNet Results</em></figcaption>
-  </figure>
+  <div style="display: inline-block; margin: 10px; text-align: center;">
+    <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="33%">
+    <br>
+    <span><em>MLP Results</em></span>
+  </div>
+  <div style="display: inline-block; margin: 10px; text-align: center;">
+    <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="33%">
+    <br>
+    <span><em>FtFormer Results</em></span>
+  </div>
+  <div style="display: inline-block; margin: 10px; text-align: center;">
+    <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="33%">
+    <br>
+    <span><em>ResNet Results</em></span>
+  </div>
 </div>
 <div align="center">
-  <p> Comparison of the unlearning task performance across different model architectures.</p>
+  <p><strong>Overall Caption:</strong> Comparison of the unlearning task performance across different model architectures.</p>
 </div>
-
 
 ## Unlearning based on the Feature Correaltion
 
