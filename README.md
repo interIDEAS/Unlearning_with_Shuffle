@@ -33,23 +33,13 @@ Each of these features was unlearned across three different architectural framew
 3. ResNet
 
 ### Results and Graphs
-<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center;">
-  <div style="flex: 0 0 50%; box-sizing: border-box; padding: 10px; text-align: center;">
-    <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" style="width: 45%;">
-    <div><em>MLP Results</em></div>
-  </div>
-  <div style="flex: 0 0 50%; box-sizing: border-box; padding: 10px; text-align: center;">
-    <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" style="width: 45%;">
-    <div><em>FtFormer Results</em></div>
-  </div>
-  <div style="flex: 0 0 50%; box-sizing: border-box; padding: 10px; text-align: center;">
-    <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" style="width: 45%;">
-    <div><em>ResNet Results</em></div>
-  </div>
-</div>
-<div align="center">
-  <p><strong>Overall Caption:</strong> Comparison of the unlearning task performance across different model architectures.</p>
-</div>
+| <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="300px"> | <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="300px"> |
+|:--------------------------------------------------------------:|:--------------------------------------------------------------:|
+| <em>MLP Results</em>                                           | <em>FtFormer Results</em>                                      |
+
+| <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="300px"> |
+|:--------------------------------------------------------------------:|
+| <em>ResNet Results</em>                                               |
 
 | <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="500px"> | <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="500px"> | <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="500px"> |
 |:---------------------------------------------------------------:|:---------------------------------------------------------------:|:---------------------------------------------------------------:|
