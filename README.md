@@ -33,27 +33,20 @@ Each of these features was unlearned across three different architectural framew
 3. ResNet
 
 ### Results and Graphs
-<table align="center">
-  <tr>
-    <td align="center" width="100%">
-      <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="50%">
-      <br>
-      <em>MLP Results</em>
-    </td>
-    <td align="center" width="100%">
-      <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="50%">
-      <br>
-      <em>FtFormer Results</em>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" colspan="2">
-      <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="50%">
-      <br>
-      <em>ResNet Results</em>
-    </td>
-  </tr>
-</table>
+<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center;">
+  <div style="flex: 0 0 50%; box-sizing: border-box; padding: 10px; text-align: center;">
+    <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" style="width: 100%;">
+    <div><em>MLP Results</em></div>
+  </div>
+  <div style="flex: 0 0 50%; box-sizing: border-box; padding: 10px; text-align: center;">
+    <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" style="width: 100%;">
+    <div><em>FtFormer Results</em></div>
+  </div>
+  <div style="flex: 0 0 50%; box-sizing: border-box; padding: 10px; text-align: center;">
+    <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" style="width: 100%;">
+    <div><em>ResNet Results</em></div>
+  </div>
+</div>
 <div align="center">
   <p><strong>Overall Caption:</strong> Comparison of the unlearning task performance across different model architectures.</p>
 </div>
