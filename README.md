@@ -35,9 +35,25 @@ Each of these features was unlearned across three different architectural framew
 ### Results and Graphs
 | <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="500px"> | <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="500px"> | <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="500px"> |
 |:---------------------------------------------------------------:|:---------------------------------------------------------------:|:---------------------------------------------------------------:|
-| <em>MLP Results</em>                                            | <em>FtFormer Results</em>                                        | <em>ResNet Results</em>                                          |
+| <em>TRI MLP Results</em>                                            | <em>TRI FtFormer Results</em>                                        | <em>TRI ResNet Results</em>                                          |
 
-<p align="center"><strong>Overall Caption:</strong> Comparison of the unlearning task performance across different model architectures.</p>
+| <img src="imgs/EI_mlp.png" alt="EI MLP Results" width="500px"> | <img src="imgs/EI_ftformer.png" alt="EI FtFormer Results" width="500px"> | <img src="imgs/EI_resnet.png" alt="EI ResNet Results" width="500px"> |
+|:---------------------------------------------------------------:|:---------------------------------------------------------------:|:---------------------------------------------------------------:|
+| <em>EI MLP Results</em>                                            | <em>EI FtFormer Results</em>                                        | <em>EI ResNet Results</em>                                          |
+
+| <img src="imgs/RASI_mlp.png" alt="RASI MLP Results" width="500px"> | <img src="imgs/RASI_ftformer.png" alt="RASI FtFormer Results" width="500px"> | <img src="imgs/RASI_resnet.png" alt="RASI ResNet Results" width="500px"> |
+|:---------------------------------------------------------------:|:---------------------------------------------------------------:|:---------------------------------------------------------------:|
+| <em>RASI MLP Results</em>                                            | <em>RASI FtFormer Results</em>                                        | <em>RASI ResNet Results</em>                                          |
+
+| <img src="imgs/SDI_mlp.png" alt="SDI MLP Results" width="500px"> | <img src="imgs/SDI_ftformer.png" alt="SDI FtFormer Results" width="500px"> | <img src="imgs/SDI_resnet.png" alt="SDI ResNet Results" width="500px"> |
+|:---------------------------------------------------------------:|:---------------------------------------------------------------:|:---------------------------------------------------------------:|
+| <em>SDI MLP Results</em>                                            | <em>SDI FtFormer Results</em>                                        | <em>SDI ResNet Results</em>                                          |
+
+| <img src="imgs/TRI_mlp.png" alt="SRI MLP Results" width="500px"> | <img src="imgs/SRI_ftformer.png" alt="SRI FtFormer Results" width="500px"> | <img src="imgs/SRI_resnet.png" alt="SRI ResNet Results" width="500px"> |
+|:---------------------------------------------------------------:|:---------------------------------------------------------------:|:---------------------------------------------------------------:|
+| <em>SRI MLP Results</em>                                            | <em>SRI FtFormer Results</em>                                        | <em>SRI ResNet Results</em>                                          |
+
+
 
 
 ## Unlearning based on the Feature Correaltion
