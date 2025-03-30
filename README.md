@@ -33,25 +33,9 @@ Each of these features was unlearned across three different architectural framew
 3. ResNet
 
 ### Results and Graphs
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="33%">
-      <br>
-      <em>MLP Results</em>
-    </td>
-    <td align="center">
-      <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="33%">
-      <br>
-      <em>FtFormer Results</em>
-    </td>
-    <td align="center">
-      <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="33%">
-      <br>
-      <em>ResNet Results</em>
-    </td>
-  </tr>
-</table>
+| <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="200px"> | <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="200px"> | <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="200px"> |
+|:---------------------------------------------------------------:|:---------------------------------------------------------------:|:---------------------------------------------------------------:|
+| <em>MLP Results</em>                                            | <em>FtFormer Results</em>                                        | <em>ResNet Results</em>                                          |
 
 <p align="center"><strong>Overall Caption:</strong> Comparison of the unlearning task performance across different model architectures.</p>
 
