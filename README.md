@@ -25,7 +25,7 @@ Each of these features was unlearned across three different architectural framew
 Corresponding results for each experiment are provided in the form of graphs, which illustrate the impact of feature unlearning on model performance and behavior. These graphs are crucial for visualizing the trade-offs and outcomes of unlearning specific features.
 
 
-### Unlearning based on the Feature Correaltion
+## Unlearning based on the Feature Correaltion
 
 We also conducted experiments on features with high correlation coefficients to understand the effects of unlearning interdependent features. These experiments were carried out using the same three architectural frameworks mentioned above.
 
