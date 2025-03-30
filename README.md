@@ -54,12 +54,11 @@ Other datasets do not include features that exceed our set threshold.
  
 ### Results and Graphs
 ![CALI Latitude Results](imgs/CALI_Latitude.png)
-*Description: Graph showing the impact of unlearning the top and least influential features using the MLP model.*
+*Description: This graph illustrates the impact of unlearning the 'Latitude' feature using the MLP, ResNet, and FtFormer models. The red line represents the baseline, and our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."*
 ![CALI Longitude Results](imgs/CALI_Longtitude.png)
-*Description: Graph depicting the outcomes of feature unlearning on the FtFormer model, focusing on interdependent feature sets.*
+*Description: This graph illustrates the impact of unlearning the 'Longtitude' feature using the MLP, ResNet, and FtFormer models. The red line represents the baseline, and our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."s.*
 ![CALI AveBedrms Results](imgs/CALI_Avgbed.png)
-*Description: Visual outcomes of unlearning using the ResNet model across various feature sets.*
-
+*Description: This graph illustrates the impact of unlearning the 'AveBedrms' feature using the MLP, ResNet, and FtFormer models. The red line represents the baseline, and our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."s.*
 
 
 ## How to Run Experiments
