@@ -8,8 +8,7 @@ We have used three different models to demonstrate the efficacy and robustness o
 - **ResNet**: A deep residual network known for its effectiveness in image processing tasks.
 
 ## Unlearning based on the Feature Importance
-
-Feature unlearning was conducted on multiple datasets. For each dataset, we identified and unlearned:
+In the submitted manuscript, we present the results for all features removed based on their high feature importance. To further demonstrate the effectiveness of our proposed method, we conducted additional experiments for each dataset which are focusing on:
 - The **top two most influential features**, as determined by their Shapley values.
 - The **least two influential features**, to assess the impact of unlearning less critical information.
 
