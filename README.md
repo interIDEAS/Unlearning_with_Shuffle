@@ -35,12 +35,12 @@ Each of these features was unlearned across three different architectural framew
 ### Results and Graphs
 <table align="center">
   <tr>
-    <td align="center" width="50%">
+    <td align="center" width="100%">
       <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="50%">
       <br>
       <em>MLP Results</em>
     </td>
-    <td align="center" width="50%">
+    <td align="center" width="100%">
       <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="50%">
       <br>
       <em>FtFormer Results</em>
