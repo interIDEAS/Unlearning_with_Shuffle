@@ -1,4 +1,4 @@
-This repository contains the experimental setup, code, and results for our paper on "Feature Unlearning: Theoretical Foundations and Practical Applications with Shuffling". In response to reviewer comments regarding the simplicity of our initial models, we have incorporated more complex models, namely FtFormer and ResNet, to demonstrate the robustness and scalability of our unlearning approach.
+This repository includes the experimental setup, code, and results for our paper, "Feature Unlearning: Theoretical Foundations and Practical Applications with Shuffling." In response to reviewer feedback regarding the simplicity of our initial models, we have integrated more advanced architectures—specifically, FtFormer and ResNet—to demonstrate the robustness and scalability of our unlearning approach. Additionally, we have extended our method to address more complex tasks using an image dataset, CelebA, a large-scale dataset featuring over 200K images.
  # Feature Unlearning with CelebA: Removing a Feature from a Computer Vision Task
  ## Dataset Overview
 
