@@ -34,9 +34,9 @@ Each of these features was unlearned across three different architectural framew
 
 ### Results and Graphs
 <p align="center">
-  <img src="imgs/TRI_mlp.png" alt="Graph 1" width="30%" style="margin-right: 10px;">
-  <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="30%" style="margin-right: 10px;">
-  <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="30%">
+  <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="33%" style="margin-right: 10px;">
+  <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="33%" style="margin-right: 10px;">
+  <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="33%">
 </p>
 
 ## Unlearning based on the Feature Correaltion
