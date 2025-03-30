@@ -1,9 +1,9 @@
 This repository contains the experimental setup, code, and results for our paper on "Feature Unlearning: Theoretical Foundations and Practical Applications with Shuffling". In response to reviewer comments regarding the simplicity of our initial models, we have incorporated more complex models, namely FtFormer and ResNet, to demonstrate the robustness and scalability of our unlearning approach.
 
-## More Complex Models:
+ ## Expanded Model Architectures (Incorporating FtFormer and ResNet):
 We have used three different models to demonstrate the efficacy and robustness of our feature unlearning approach:
 
-- **MLP (Multi-Layer Perceptron)**: A classical neural network model consisting of multiple layers of perceptrons. It is widely used for tabular data and serves as our baseline model.
+- **MLP (Original)**: A classical neural network model consisting of multiple layers of perceptrons. It is widely used for tabular data and serves as our baseline model.
 - **FtFormer**: A transformer-based model designed to handle sequential data.
 - **ResNet**: A deep residual network known for its effectiveness in image processing tasks.
 
@@ -14,7 +14,7 @@ Feature unlearning was conducted on multiple datasets. For each dataset, we iden
 - The **least two influential features**, to assess the impact of unlearning less critical information.
 
 Each of these features was unlearned across three different architectural frameworks:
-1. Baseline Model (as per the original experiments)
+1. MLP (as per the original experiments)
 2. FtFormer
 3. ResNet
 
