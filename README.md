@@ -53,7 +53,7 @@ Highly correlated features in *MAGIC_TELE* (threshold = 0.8):
   
 Features Unlearned: **fSize**
 
-Other datasets do not include features that exceed our set threshold.
+Other datasets do not include features that exceed our set threshold (The code for checking feature correlation is available in: check_feature_correlation.ipynb).
  
 ### Results and Graphs
 ![CALI Latitude Results](imgs/CALI_Latitude.png)
