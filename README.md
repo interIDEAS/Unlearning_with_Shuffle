@@ -48,7 +48,11 @@ Each of these features was unlearned across three different architectural framew
 
 The following graph presents the aggregated results from all datasets. For detailed information on each individual dataset, please refer to the *results_processed* folder.
 
-**Important: Our algorithm demonstrates remarkable efficiency in unlearning the features with high correlation, a capability that is consistently observed across multiple architectural frameworks, including MLP, ResNet, and FtFormer.**
+**Important: Our algorithm exhibits exceptional efficiency in unlearning features with the top two highest and lowest importance scores. This capability has been consistently validated across various architectural frameworks, including MLP, ResNet, and FtFormer.**
+
+
+
+
 
 
 | <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="500px"> | <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="500px"> | <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="500px"> |
