@@ -30,7 +30,7 @@ Each of these features was unlearned across three different architectural framew
 
 ## Unlearning based on the Feature Correaltion
 
-We also conducted experiments on features with high correlation coefficients to understand the effects of unlearning interdependent features. These experiments were carried out using the same three architectural frameworks mentioned above. 
+We also conducted experiments on features with high correlation coefficients to understand the effects of unlearning interdependent features. These experiments were carried out using the same three architectural frameworks mentioned above. **Our algorithm demonstrates remarkable efficiency in identifying and removing features with high correlation, a capability that is consistently observed across multiple architectural frameworks, including MLP, ResNet, and FtFormer.**
 
 Highly correlated features in **CALI** (threshold = 0.8):
 - Latitude and Longitude: 0.925
@@ -68,7 +68,7 @@ Other datasets do not include features that exceed our set threshold.
 *Description: This graph illustrates the impact of unlearning the 'NumberOfTime30-59DaysPastDueNotWorse' feature using the MLP, ResNet, and FtFormer models. The red line represents the baseline, and our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."s.*
 ![MAGIC_TELE fSize Results](imgs/TETL.png)
 *Description: This graph illustrates the impact of unlearning the 'fSize' feature using the MLP, ResNet, and FtFormer models. The red line represents the baseline, and our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."s.*
-**In conclusion, our algorithm demonstrates remarkable efficiency in identifying and removing features with high correlation, a capability that is consistently observed across multiple architectural frameworks, including MLP, ResNet, and FtFormer.**
+
 ## How to Run Experiments
 
 To replicate our experiments or to run new experiments using the setup provided, follow the instructions below:
