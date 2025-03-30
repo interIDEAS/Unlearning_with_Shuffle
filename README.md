@@ -34,11 +34,28 @@ Each of these features was unlearned across three different architectural framew
 
 ### Results and Graphs
 <p align="center">
-  <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="33%" style="margin-right: 10px;">
-  <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="33%" style="margin-right: 10px;">
-  <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="33%">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="33%" style="margin-right: 10px;">
+        <br>
+        <em>MLP Results</em>
+      </td>
+      <td align="center">
+        <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="33%" style="margin-right: 10px;">
+        <br>
+        <em>FtFormer Results</em>
+      </td>
+      <td align="center">
+        <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="33%">
+        <br>
+        <em>ResNet Results</em>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <strong>Overall Caption:</strong> Comparison of the unlearning task performance across different model architectures.
 </p>
-
 ## Unlearning based on the Feature Correaltion
 
 We also conducted experiments on features with high correlation coefficients to understand the effects of unlearning interdependent features. These experiments were carried out using the same three architectural frameworks (MLP, FtFormer, ResNet)mentioned above. **Our algorithm demonstrates remarkable efficiency in unlearning the features with high correlation, a capability that is consistently observed across multiple architectural frameworks, including MLP, ResNet, and FtFormer.**
