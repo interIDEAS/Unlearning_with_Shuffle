@@ -33,7 +33,7 @@ Each of these features was unlearned across three different architectural framew
 3. ResNet
 
 ### Results and Graphs
-| <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="400px"> | <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="400px"> | <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="400px"> |
+| <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="500px"> | <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="500px"> | <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="500px"> |
 |:---------------------------------------------------------------:|:---------------------------------------------------------------:|:---------------------------------------------------------------:|
 | <em>MLP Results</em>                                            | <em>FtFormer Results</em>                                        | <em>ResNet Results</em>                                          |
 
