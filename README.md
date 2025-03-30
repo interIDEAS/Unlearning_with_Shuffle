@@ -45,7 +45,11 @@ Each of these features was unlearned across three different architectural framew
 3. ResNet
 
 ### Results and Graphs
+
 The following graph presents the aggregated results from all datasets. For detailed information on each individual dataset, please refer to the *results_processed* folder.
+
+**Important: Our algorithm demonstrates remarkable efficiency in unlearning the features with high correlation, a capability that is consistently observed across multiple architectural frameworks, including MLP, ResNet, and FtFormer.**
+
 
 | <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="500px"> | <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="500px"> | <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="500px"> |
 |:---------------------------------------------------------------:|:---------------------------------------------------------------:|:---------------------------------------------------------------:|
@@ -72,7 +76,9 @@ The following graph presents the aggregated results from all datasets. For detai
 
 ## Unlearning based on the Feature Correaltion
 
-We also conducted experiments on features with high correlation coefficients to understand the effects of unlearning interdependent features. These experiments were carried out using the same three architectural frameworks (MLP, FtFormer, ResNet)mentioned above. **Our algorithm demonstrates remarkable efficiency in unlearning the features with high correlation, a capability that is consistently observed across multiple architectural frameworks, including MLP, ResNet, and FtFormer.**
+We also conducted experiments on features with high correlation coefficients to understand the effects of unlearning interdependent features. These experiments were carried out using the same three architectural frameworks (MLP, FtFormer, ResNet)mentioned above. 
+
+**Important: Our algorithm demonstrates remarkable efficiency in unlearning the features with high correlation, a capability that is consistently observed across multiple architectural frameworks, including MLP, ResNet, and FtFormer.**
 
 Highly correlated features in *CALI* (threshold = 0.8):
 - Latitude and Longitude: 0.925
