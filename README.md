@@ -6,11 +6,28 @@ TCelebFaces Attributes Dataset (CelebA) is an extensive collection of over 200K 
 
 ## Experiment Description
 
-In this experiment, we first train a model to classify gender based on the celebrity images. Leveraging the dataset annotations, we then perform three distinct unlearning tasks:
+In this experiment, we first train a model to classify gender/Big Nose/Pointy Nose/Eyeglasses/Narrow Eyes based on the celebrity images. Leveraging the dataset annotations, we then perform three distinct unlearning tasks:
 
-- **Unlearn Noise:** Removing extraneous background details using the annotated noise locations.
-- **Unlearn Eyes:** Excluding the eye regions based on the provided annotations.
-- **Unlearn Noise+Eyes:** Simultaneously removing both the noise and the eyes.
+- **Unlearn Noise (Classify Gender):**  
+  Remove extraneous background details using the annotated noise locations.
+
+- **Unlearn Eyes (Classify Gender):**  
+  Exclude the eye regions based on the provided annotations.
+
+- **Unlearn Noise+Eyes (Classify Gender):**  
+  Simultaneously remove both the background noise and the eye regions.
+
+- **Unlearn Nose (Classify Big Nose):**  
+  Remove nose features corresponding to a big nose.
+
+- **Unlearn Nose (Classify Pointy Nose):**  
+  Remove nose features corresponding to a pointy nose.
+
+- **Unlearn Eyes (Classify Eyeglasses):**  
+  Remove eye features associated with eyeglasses.
+
+- **Unlearn Eyes (Classify Narrow Eyes):**  
+  Remove eye features associated with narrow eyes.
 
 ![Demostration of Image Unlearning](imgs/cv_unlearn_demo.png)
 *Description: This graph demonstrates the unlearning process applied to the celebA dataset.
