@@ -1,5 +1,20 @@
 This repository contains the experimental setup, code, and results for our paper on "Feature Unlearning: Theoretical Foundations and Practical Applications with Shuffling". In response to reviewer comments regarding the simplicity of our initial models, we have incorporated more complex models, namely FtFormer and ResNet, to demonstrate the robustness and scalability of our unlearning approach.
+ # Feature Unlearning with CELCA: Removing a Feature from a Computer Vision Task
+ ## Dataset Overview
 
+The dataset used in this experiment consists of celebrity photographs, each accompanied by detailed annotations that specify the locations of background noise and the eyes. This rich spatial information enables precise targeting of these features, allowing us to accurately assess their impact on gender classification performance.
+
+## Experiment Description
+
+In this experiment, we first train a model to classify gender based on the celebrity images. Leveraging the dataset annotations, we then perform three distinct unlearning tasks:
+
+- **Unlearn Noise:** Removing extraneous background details using the annotated noise locations.
+- **Unlearn Eyes:** Excluding the eye regions based on the provided annotations.
+- **Unlearn Noise+Eyes:** Simultaneously removing both the noise and the eyes.
+
+These tasks help us evaluate how the removal of specific features affects model performance and robustness.
+
+# Feature Unlearning: Leveraging Complex Model Architectures, Higher Feature Importance, and Correlation Analysis
  ## Expanded Model Architectures (Incorporating FtFormer and ResNet):
 We have used three different models to demonstrate the efficacy and robustness of our feature unlearning approach:
 
