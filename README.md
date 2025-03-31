@@ -1,8 +1,7 @@
-This repository includes the experimental setup, code, and results for the rebuttal of our paper, "**Feature Unlearning: Theoretical Foundations and Practical Applications with Shuffling.**", aiming to provide more details of response in terms of
-
-- *Simplicity of MLP model*: We have integrated more advanced neural architectures following the paper "**Revisiting Deep Learning Models for Tabular Data**" published in NeurIPS 2021, where the ResNet and the FT-Transformer were leveraged for tabular dataset.
-- *Choices of unlearned feature and corresponding unlearning impacts*: Based on each feature's Shapley values, we select top two most important features and least two important features to unlearn. Additionally, we also examine our unlearning method's effectiveness and robustness when unlearning features that are highly correlated with other features.
-- *Potential in complex tasks*: We have extended our unlearning method to an image classification task using **CelebA**, a large-scale dataset featuring over 200K images, from the paper "Deep Learning Face Attributes in the Wild" published in ICCV 2015. We further modify our model to use ViT as the backbone. 
+This repository includes the experimental setup, code, and results for the rebuttal of our paper \#13751, "**Efficient Feature Unlearning Using Shuffling: Algorithm and Theoretical Analysis.**". It offers additional details addressing three key aspects raised by the reviewers:
+- *Model Complexity*: In response to Reviewers \#gLFb and \#F51p, we have integrated more advanced neural architectures for unlearning tabular datasets. We follow the paper "**Revisiting Deep Learning Models for Tabular Data**" levearging *ResNet* and the *FT-Transformer* and published in NeurIPS 2021, which have been shown to be effective for tabular data.
+- *Feature Selection and Unlearning Impact*: As suggested by Reviewers \#gLFb and \#F51p, we have analyzed the impact of unlearning by selecting both the two most important and the two least important features based on their Shapley value rankings. Additionally, per Reviewer \#gLFb's suggestion, we have evaluated the robustness of our unlearning method when removing features that are highly correlated with others.
+- *Applicability to Complex Tasks*: In response to Reviewer \#gLFb, we have extended our unlearning method to an image classification task using **CelebA**, a large-scale dataset featuring over 200K images, originally introduced in "Deep Learning Face Attributes in the Wild" (ICCV 2015).
 
 
 
@@ -21,21 +20,21 @@ In addition to MLP, we have incorporated **ResNet** and **FT-Transformer** for t
 
 ## Unlearning Features with Different Feature Importance
 
-In the submitted manuscript, the features selected for unlearning are those identified as having the highest feature importance. The feature importance is measured on the original model (before unlearning) through the Shapley value using the ``shap`` package.
+In the single-feature unlearning of the original manuscript, we selected the most important features for unlearning based on their Shapley values, computed using the ``shap`` package on the original model (prior to unlearning) to determine feature importance.
 
 
-To further demonstrate the effectiveness of our proposed method, we conducted additional experiments for each used tabular dataset which are focusing on:
+To further validate the effectiveness of our proposed method, we conducted additional experiments on each tabular dataset, focusing on:
 
-- The **top two most influential features**, as determined by their Shapley values.
-- The **least two influential features**, to assess the impact of unlearning less critical information.
+- The **two most influential features**, as identified by their Shapley values.
+- The **two least influential features**, to assess the impact of unlearning less critical information.
 
-Each of these features was unlearned across three different neural architectural frameworks:
+Each selected feature was unlearned across three different neural architectural frameworks:
 
-1. MLP (as per the original experiments)
+1. MLP (as used in the original experiments)
 2. ResNet
 3. FT-Transformer (referred to as FtFormer below)
 
-The evaluation metrics remain the same as original experiments, including
+The evaluation metrics remain consistent with the original experiments, including:
 
 1. Test Retention Index (TRI)
 2. Efficiency Index (EI)
@@ -45,11 +44,13 @@ The evaluation metrics remain the same as original experiments, including
 
 Experimental results are presented below.
 
+
 ### Results and Graphs
 
-The following each graph presents the aggregated&averaged results across all datasets. For detailed information on each individual dataset, please refer to the ``results`` folder. Also, codes to load these dataset results are provided in ``evaluation_rebuttal.ipynb``.
+Each graph below presents the aggregated and averaged results across all datasets. For detailed results on each dataset, please refere to the ``results`` folder. Also, code for loading and analyzing these results is provided in ``evaluation_rebuttal.ipynb``.
 
-**Important: Our algorithm exhibits exceptional efficiency in unlearning features with the top two highest and lowest importance scores. This capability has been consistently validated across various architectural frameworks, including MLP, ResNet, and FtFormer.**
+
+**Key Findings: Our algorithm demonstrates exceptional efficiency in unlearning both the most and least influential features. This effectiveness is consistently observed across different architectural frameworks, including MLP, ResNet, and FtFormer.**
 
 
 
@@ -79,9 +80,9 @@ The following each graph presents the aggregated&averaged results across all dat
 
 ## Unlearning Features that are Highly Correlated with Other Features
 
-We have conducted experiments on features with high correlation coefficients to understand the effects of unlearning interdependent features. The threshold of identifying highly-correlated features is set to 0.8. The codes of calculating each dataset's feature correlation is provided in ``check_feature_correlation.ipynb``. These experiments were carried out using the same three architectural frameworks (MLP, FtFormer, ResNet) mentioned above. 
+We conducted experiments on highly correlated features to analyze the effects of unlearning interdependent features. Features with a correlation coefficient above 0.8 were selected. The code for computing feature correlations for each dataset is available in ``check_feature_correlation.ipynb``. These experiments were carried out using the same three architectural frameworks (MLP, FtFormer, ResNet) mentioned above. 
 
-**Important: Our algorithm demonstrates remarkable efficiency in unlearning the features with high correlation, a capability that is consistently observed across multiple architectural frameworks, including MLP, ResNet, and FtFormer.**
+**Key Finding: Our algorithm exhibits remarkable efficiency in unlearning highly correlated features, a capability consistently demonstrated across MLP, ResNet, and FtFormer**
 
 Highly correlated features in the *CALI* dataset:
 
@@ -145,14 +146,14 @@ An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale. ICLR
 
 ## Experiment Description
 
-In the tabular dataset, each column represents a unique feature. However, for the computer vision task, features on one image are visually captured. For example, features such as nose, eye, hair, and gender can be observed in the used CelebA dataset.
+In tabular datasets, each column represents a distinct feature, making feature selection and manipulation explicit. In contrast, for computer vision tasks, features are visually embedded within images and not explicitly structured as separate variables. For instance, in the CelebA dataset, facial attributes such as the nose, eyes, and gender are inherently captured within each image rather than existing as distinct columns.
 
-Therefore, our unlearning method is extended to unlearn these specific features under the image classification settings. Specifically, the unlearned features include 
-- Nose,
-- Eye,
-- Nose and Eye,
+To extend our unlearning method to the image classification setting, we focus on selectively unlearning specific visual features of the CelebA dataset, including:
+- Nose
+- Eye
+- Nose and Eye
 
-and the labels used for classification include
+The classification tasks involve predicting the following labels:
 - Gender (Male or Female)
 - Big Nose
 - Pointy Nose
@@ -176,14 +177,22 @@ The detailed descriptions of the performed unlearning tasks are provided below
 - **Unlearn Eyes (Label Narrow Eyes):**  
   Remove eye features associated with narrow eyes.
 
-![](imgs/cv_unlearn_demo.png)
-*Description: This figure shows how we mask the regions w.r.t. the unlearned feature based on the provided information in the CelebA dataset.
+
+The following example illustrates how an original image is processed for our unlearning method and retrain-from-scratch model:
+
+1. Shuffled Nose Feature: The nose region is shuffled while preserving the overall structure of the image.
+2. Masked Nose Feature: The nose region is masked to remove its influence on the model.
+
+
+
+![](imgs/example.png)
+
 
 ### Results and Graphs
 
 Experimental results of the above seven image classification tasks are shown below. For detailed information on each task, please refer to the ``results_cv`` folder. Also, codes to load these dataset results are provided in ``evaluation_rebuttal_cv.ipynb``.
 
-**Important: Our algorithm exhibits exceptional efficiency in unlearning various visual features in the image classification tasks compared to the two baselines.**
+**Key Findings: Our algorithm demonstrates exceptional efficiency in unlearning various visual features in image classification tasks, outperforming both baseline methods..**
 
 
 ![Big_Nose nose Results](imgs/cv/Big_Nose_nose_metrics.png)
