@@ -1,7 +1,17 @@
 This repository includes the experimental setup, code, and results for the rebuttal of our paper \#13751, "**Efficient Feature Unlearning Using Shuffling: Algorithm and Theoretical Analysis.**". It offers additional details addressing three key aspects raised by the reviewers:
-- *Model Complexity*: In response to Reviewers \#gLFb and \#F51p, we have integrated more advanced neural architectures for unlearning tabular datasets. We follow the paper "**Revisiting Deep Learning Models for Tabular Data**" levearging *ResNet* and the *FT-Transformer* and published in NeurIPS 2021, which have been shown to be effective for tabular data.
-- *Feature Selection and Unlearning Impact*: As suggested by Reviewers \#gLFb and \#F51p, we have analyzed the impact of unlearning by selecting both the two most important and the two least important features based on their Shapley value rankings. Additionally, per Reviewer \#gLFb's suggestion, we have evaluated the robustness of our unlearning method when removing features that are highly correlated with others.
-- *Applicability to Complex Tasks*: In response to Reviewer \#gLFb, we have extended our unlearning method to an image classification task using **CelebA**, a large-scale dataset featuring over 200K images, originally introduced in "Deep Learning Face Attributes in the Wild" (ICCV 2015).
+- [*Model Complexity*](#details-for-responses-to-simplicity-of-mlp-model-and-choices-of-unlearned-feature): In response to Reviewers \#gLFb and \#F51p, we have integrated more advanced neural architectures for unlearning tabular datasets. We follow the paper "**Revisiting Deep Learning Models for Tabular Data**" levearging *ResNet* and the *FT-Transformer* and published in NeurIPS 2021, which have been shown to be effective for tabular data.
+- [*Feature Selection and Unlearning Impact*](#details-for-responses-to-simplicity-of-mlp-model-and-choices-of-unlearned-feature): As suggested by Reviewers \#gLFb and \#F51p, we have analyzed the impact of unlearning by selecting both the two most important and the two least important features based on their Shapley value rankings. Additionally, per Reviewer \#gLFb's suggestion, we have evaluated the robustness of our unlearning method when removing features that are highly correlated with others.
+- [*Applicability to Complex Tasks*](#details-for-responses-to-potential-in-complex-tasks): In response to Reviewer \#gLFb, we have extended our unlearning method to an image classification task using **CelebA**, a large-scale dataset featuring over 200K images, originally introduced in "Deep Learning Face Attributes in the Wild" (ICCV 2015).
+
+The Table of Contents of this repository is shown below 
+- [Details for Responses to *Simplicity of MLP model* and *Choices of unlearned feature*](#details-for-responses-to-simplicity-of-mlp-model-and-choices-of-unlearned-feature)
+  - [Advanced Model Architectures](#advanced-model-architectures)
+  - [Unlearning Features with Different Feature Importance](#unlearning-features-with-different-feature-importance)
+  - [Unlearning Features that are Highly Correlated with Other Features](#unlearning-features-that-are-highly-correlated-with-other-features)
+- [Details for Responses to *Potential in complex tasks*](#details-for-responses-to-potential-in-complex-tasks)
+  - [Dataset Overview](#dataset-overview)
+  - [Model Modification](#model-modification)
+  - [Experiments](#experiments)
 
 
 
@@ -144,7 +154,7 @@ For the image classification task, we leverage the ViT as backbone and MLP as cl
 [ViT reference] Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, Jakob Uszkoreit, Neil Houlsby:
 An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale. ICLR 2021
 
-## Experiment Description
+## Experiments
 
 In tabular datasets, each column represents a distinct feature, making feature selection and manipulation explicit. In contrast, for computer vision tasks, features are visually embedded within images and not explicitly structured as separate variables. For instance, in the CelebA dataset, facial attributes such as the nose, eyes, and gender are inherently captured within each image rather than existing as distinct columns.
 
