@@ -1,6 +1,6 @@
 This repository includes the experimental setup, code, and results for the rebuttal of our paper \#13751, "**Efficient Feature Unlearning Using Shuffling: Algorithm and Theoretical Analysis.**". It offers additional details addressing three key aspects raised by the reviewers:
 
-## Advanced Model Architectures
+## Figure 1: : Advanced Model Architectures with the Most Important Features for Unlearning
 
 | <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="500px"> | <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="500px"> | <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="500px"> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
@@ -24,53 +24,20 @@ This repository includes the experimental setup, code, and results for the rebut
 
 
 
-
-## Unlearning Features that are Highly Correlated with Other Features
-
-We conducted experiments on highly correlated features to analyze the effects of unlearning interdependent features. Features with a correlation coefficient above 0.8 were selected. The code for computing feature correlations for each dataset is available in ``check_feature_correlation.ipynb``. These experiments were carried out using the same three architectural frameworks (MLP, FtFormer, ResNet) mentioned above. 
-
-**Key Finding: Our algorithm exhibits remarkable efficiency in unlearning highly correlated features, a capability consistently demonstrated across MLP, ResNet, and FtFormer**
-
-Highly correlated features in the *CALI* dataset:
-
-- ``Latitude`` and ``Longitude``: 0.925
-- `AveRooms` and `AveBedrms`: 0.848
-
-Features Unlearned: **Latitude, Longitude, AveBedrms**
-
-Highly correlated features in *CREDIT* dataset:
-
-- `NumberOfTimes90DaysLate` and `NumberOfTime60-89DaysPastDueNotWorse`: 0.991
-- `NumberOfTime30-59DaysPastDueNotWorse` and `NumberOfTime60-89DaysPastDueNotWorse`: 0.988
-- `NumberOfTime30-59DaysPastDueNotWorse` and `NumberOfTimes90DaysLate`: 0.983
-
-Features Unlearned: **NumberOfTimes90DaysLate, NumberOfTime30-59DaysPastDueNotWorse**
-
-
-Highly correlated features in *MAGIC_TELE* dataset:
-
-- `fConc`: and `fConc1`:: 0.975
-- `fSize`: and `fConc`:: 0.847
-- `fSize`: and `fConc1`:: 0.804
-
-Features Unlearned: **fSize**
-
-Experimental results are shown below.
-
-### Results and Graphs
+## Figure 2: : Advanced Model Architectures with the Highly Correlated  Features for Unlearning
 
 ![CALI Latitude Results](imgs/CALI_Latitude.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'Latitude' feature using the MLP, ResNet, and FtFormer models. Our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."*
+*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'Latitude'(Correlation for``Latitude`` and ``Longitude`` is 0.925) feature using the MLP, ResNet, and FtFormer models. Our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."*
 ![CALI Longitude Results](imgs/CALI_Longtitude.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'Longtitude' feature using the MLP, ResNet, and FtFormer models. Our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."*
+*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'Longtitude' (Correlation for``Latitude`` and ``Longitude`` is 0.925) feature using the MLP, ResNet, and FtFormer models. Our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."*
 ![CALI AveBedrms Results](imgs/CALI_Avgbed.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'AveBedrms' feature using the MLP, ResNet, and FtFormer models. Our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."*
+*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'AveBedrms' (Correlation for``AveRooms` and `AveBedrms`is 0.848)  feature using the MLP, ResNet, and FtFormer models. Our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."*
 ![CREDIT NumberOfTimes90DaysLate Results](imgs/CREDIT_90.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'NumberOfTimes90DaysLate' feature using the MLP, ResNet, and FtFormer models. Our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."s.*
+*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'NumberOfTimes90DaysLate' (Correlation for - `NumberOfTimes90DaysLate` and `NumberOfTime60-89DaysPastDueNotWorse`is 0.991) feature using the MLP, ResNet, and FtFormer models. Our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."s.*
 ![CREDIT NumberOfTime30-59DaysPastDueNotWorse Results](imgs/CREDIT_3059.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'NumberOfTime30-59DaysPastDueNotWorse' feature using the MLP, ResNet, and FtFormer models. Our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."*
+*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'NumberOfTime30-59DaysPastDueNotWorse' (Correlation for  `NumberOfTime30-59DaysPastDueNotWorse` and `NumberOfTime60-89DaysPastDueNotWorse` is 0.988) feature using the MLP, ResNet, and FtFormer models. Our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."*
 ![MAGIC_TELE fSize Results](imgs/TETL.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'fSize' feature using the MLP, ResNet, and FtFormer models. Our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."*
+*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'fSize'  (Correlation for `fSize`: and `fConc` is 0.847) feature using the MLP, ResNet, and FtFormer models. Our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."*
 
 
 
