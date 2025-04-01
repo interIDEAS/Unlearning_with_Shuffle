@@ -2,15 +2,15 @@ This repository includes the experimental setup, code, and results for the rebut
 
 ## Figure 1: : Results of Advanced Model Architectures with the Most and Least Important Features for Unlearning
 
-| <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="500px"> | <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="500px"> | <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="500px"> |
+| <img src="imgs_important_feature/TRI_mlp_CREDIT.png" alt="TRI MLP Results" width="500px"> | <img src="imgs_important_feature/TRI_ftformer_CREDIT.png" alt="TRI FtFormer Results" width="500px"> | <img src="imgs_important_feature/TRI_resnet_CREDIT.png" alt="TRI ResNet Results" width="500px"> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |                   <em>TRI MLP Results for Top Two Important (identified by Shapley values) Features</em>                   |                <em>TRI FtFormer Results for Top Two Important(identified by Shapley values) Features</em>                 |                 <em>TRI ResNet Results for Top Two Important(identified by Shapley values) Features</em>                  |
 
-| <img src="imgs/EI_mlp.png" alt="EI MLP Results" width="500px"> | <img src="imgs/EI_ftformer.png" alt="EI FtFormer Results" width="500px"> | <img src="imgs/EI_resnet.png" alt="EI ResNet Results" width="500px"> |
+| <img src="imgs_important_feature/EI_mlp_CREDIT.png" alt="EI MLP Results" width="500px"> | <img src="imgs_important_feature/EI_ftformer_CREDIT.png" alt="EI FtFormer Results" width="500px"> | <img src="imgs_important_feature/EI_resnet_CREDIT.png" alt="EI ResNet Results" width="500px"> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |                   <em>EI MLP Results for Top Two Important (identified by Shapley values) Features</em>                    |                 <em>EI FtFormer Results for Top Two Important (identified by Shapley values) Features</em>                 |                  <em>EI ResNet Results for Top Two Important (identified by Shapley values) Features</em>                  |
 
-| <img src="imgs/RASI_mlp.png" alt="RASI MLP Results" width="500px"> | <img src="imgs/RASI_ftformer.png" alt="RASI FtFormer Results" width="500px"> | <img src="imgs/RASI_resnet.png" alt="RASI ResNet Results" width="500px"> |
+| <img src="imgs_important_feature/RASI_mlp_CREDIT.png" alt="RASI MLP Results" width="500px"> | <img src="imgs_important_feature//RASI_ftformer_CREDIT.png" alt="RASI FtFormer Results" width="500px"> | <img src="imgs_important_feature/RASI_resnet.png" alt="RASI ResNet Results" width="500px"> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |                  <em>RASI MLP Results for Top Two Important (identified by Shapley values) Features</em>                   |                <em>RASI FtFormer Results for Top Two Important (identified by Shapley values) Features</em>                |                 <em>RASI ResNet Results for Top Two Important (identified by Shapley values) Features</em>                 |
 
