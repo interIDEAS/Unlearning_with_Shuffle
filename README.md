@@ -1,6 +1,6 @@
 This repository includes the experimental setup, code, and results for the rebuttal of our paper \#13751, "**Efficient Feature Unlearning Using Shuffling: Algorithm and Theoretical Analysis.**". It offers additional details addressing three key aspects raised by the reviewers:
 
-## Figure 1: : Results of Advanced Model Architectures with the Most and Least Important Features for Unlearning
+## Figure 1: Results of Advanced Model Architectures with the Most and Least Important Features for Unlearning
 
 | <img src="imgs_important_feature/TRI_mlp_CREDIT.png" alt="TRI MLP Results" width="500px"> | <img src="imgs_important_feature/TRI_ftformer_CREDIT.png" alt="TRI FtFormer Results" width="500px"> | <img src="imgs_important_feature/TRI_resnet_CREDIT.png" alt="TRI ResNet Results" width="500px"> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
@@ -18,11 +18,32 @@ This repository includes the experimental setup, code, and results for the rebut
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |                   <em>SDI MLP Results for Top Two Important (identified by Shapley values) Features</em>                   |                <em>SDI FtFormer Results for Top Two Important (identified by Shapley values) Features</em>                 |                 <em>SDI ResNet Results for Top Two Important (identified by Shapley values) Features</em>                  |
 
-| <img src="imgs_important_feature/TRI_mlp_CREDIT.png" alt="SRI MLP Results" width="500px"> | <img src="imgs_important_feature/SRI_ftformer_CREDIT.png" alt="SRI FtFormer Results" width="500px"> | <img src="imgs_important_feature/SRI_resnet_CREDIT.png" alt="SRI ResNet Results" width="500px"> |
+| <img src="imgs_important_feature/TRI_mlp_CALI.png" alt="SRI MLP Results" width="500px"> | <img src="imgs_important_feature/SRI_ftformer_CALI.png" alt="SRI FtFormer Results" width="500px"> | <img src="imgs_important_feature/SRI_resnet_CALI.png" alt="SRI ResNet Results" width="500px"> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |                   <em>SRI MLP Results for Top Two Important (identified by Shapley values) Features</em>                   |                <em>SRI FtFormer Results for Top Two Important (identified by Shapley values) Features</em>                 |                 <em>SRI ResNet Results for Top Two Important (identified by Shapley values) Features</em>                  |
 
-*These results represent the aggregated outcome across all eight datasets.*
+
+| <img src="imgs_important_feature/TRI_mlp_CALI.png" alt="TRI MLP Results" width="500px"> | <img src="imgs_important_feature/TRI_ftformer_CALI.png" alt="TRI FtFormer Results" width="500px"> | <img src="imgs_important_feature/TRI_resnet_CALI.png" alt="TRI ResNet Results" width="500px"> |
+| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|                   <em>TRI MLP Results for Top Two Important (identified by Shapley values) Features</em>                   |                <em>TRI FtFormer Results for Top Two Important(identified by Shapley values) Features</em>                 |                 <em>TRI ResNet Results for Top Two Important(identified by Shapley values) Features</em>                  |
+
+| <img src="imgs_important_feature/EI_mlp_CALI.png" alt="EI MLP Results" width="500px"> | <img src="imgs_important_feature/EI_ftformer_CALI.png" alt="EI FtFormer Results" width="500px"> | <img src="imgs_important_feature/EI_resnet_CALI.png" alt="EI ResNet Results" width="500px"> |
+| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|                   <em>EI MLP Results for Top Two Important (identified by Shapley values) Features</em>                    |                 <em>EI FtFormer Results for Top Two Important (identified by Shapley values) Features</em>                 |                  <em>EI ResNet Results for Top Two Important (identified by Shapley values) Features</em>                  |
+
+| <img src="imgs_important_feature/RASI_mlp_CALI.png" alt="RASI MLP Results" width="500px"> | <img src="imgs_important_feature/RASI_ftformer_CALI.png" alt="RASI FtFormer Results" width="500px"> | <img src="imgs_important_feature/RASI_resnet_CALI.png" alt="RASI ResNet Results" width="500px"> |
+| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|                  <em>RASI MLP Results for Top Two Important (identified by Shapley values) Features</em>                   |                <em>RASI FtFormer Results for Top Two Important (identified by Shapley values) Features</em>                |                 <em>RASI ResNet Results for Top Two Important (identified by Shapley values) Features</em>                 |
+
+| <img src="imgs_important_feature/SDI_mlp_CALI.png" alt="SDI MLP Results" width="500px"> | <img src="imgs_important_feature/SDI_ftformer_CALI.png" alt="SDI FtFormer Results" width="500px"> | <img src="imgs_important_feature/SDI_resnet_CALI.png" alt="SDI ResNet Results" width="500px"> |
+| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|                   <em>SDI MLP Results for Top Two Important (identified by Shapley values) Features</em>                   |                <em>SDI FtFormer Results for Top Two Important (identified by Shapley values) Features</em>                 |                 <em>SDI ResNet Results for Top Two Important (identified by Shapley values) Features</em>                  |
+
+| <img src="imgs_important_feature/TRI_mlp_CALI.png" alt="SRI MLP Results" width="500px"> | <img src="imgs_important_feature/SRI_ftformer_CALI.png" alt="SRI FtFormer Results" width="500px"> | <img src="imgs_important_feature/SRI_resnet_CALI.png" alt="SRI ResNet Results" width="500px"> |
+| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|                   <em>SRI MLP Results for Top Two Important (identified by Shapley values) Features</em>                   |                <em>SRI FtFormer Results for Top Two Important (identified by Shapley values) Features</em>                 |                 <em>SRI ResNet Results for Top Two Important (identified by Shapley values) Features</em>                  |
+
+
 
 ## Figure 2: Advanced Model Architectures with the Highly Correlated  Features for Unlearning
 
