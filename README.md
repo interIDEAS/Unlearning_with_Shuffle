@@ -2,25 +2,17 @@ This repository includes the experimental setup, code, and results for the rebut
 
 ## Advanced Model Architectures
 
-In addition to MLP, we have incorporated **ResNet** and **FT-Transformer** for tabular unlearning task.
-
-[ResNet reference] K. He, X. Zhang, S. Ren and J. Sun, "Deep Residual Learning for Image Recognition," 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Las Vegas, NV, USA, 2016, pp. 770-778, doi: 10.1109/CVPR.2016.90. 
-
-
-[FT-Transformer reference] Yury Gorishniy, Ivan Rubachev, Valentin Khrulkov, and Artem Babenko. 2021. Revisiting deep learning models for tabular data. In Proceedings of the 35th International Conference on Neural Information Processing Systems (NIPS '21). Curran Associates Inc., Red Hook, NY, USA, Article 1447, 18932–18943.
-
-
 | <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="500px"> | <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="500px"> | <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="500px"> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |                   <em>TRI MLP Results for Top Two Important (identified by Shapley values) Features</em>                   |                <em>TRI FtFormer Results for Top Two Important(identified by Shapley values) Features</em>                 |                 <em>TRI ResNet Results for Top Two Important(identified by Shapley values) Features</em>                  |
 
 | <img src="imgs/EI_mlp.png" alt="EI MLP Results" width="500px"> | <img src="imgs/EI_ftformer.png" alt="EI FtFormer Results" width="500px"> | <img src="imgs/EI_resnet.png" alt="EI ResNet Results" width="500px"> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|                   <em>EI MLP Results</em>                    |                 <em>EI FtFormer Results</em>                 |                  <em>EI ResNet Results</em>                  |
+|                   <em>EI MLP Results for Top Two Important (identified by Shapley values) Features</em>                    |                 <em>EI FtFormer Results for Top Two Important (identified by Shapley values) Features</em>                 |                  <em>EI ResNet Results for Top Two Important (identified by Shapley values) Features</em>                  |
 
 | <img src="imgs/RASI_mlp.png" alt="RASI MLP Results" width="500px"> | <img src="imgs/RASI_ftformer.png" alt="RASI FtFormer Results" width="500px"> | <img src="imgs/RASI_resnet.png" alt="RASI ResNet Results" width="500px"> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|                  <em>RASI MLP Results</em>                   |                <em>RASI FtFormer Results</em>                |                 <em>RASI ResNet Results</em>                 |
+|                  <em>RASI MLP Results for Top Two Important (identified by Shapley values) Features</em>                   |                <em>RASI FtFormer Results for Top Two Important (identified by Shapley values) Features</em>                |                 <em>RASI ResNet Results for Top Two Important (identified by Shapley values) Features</em>                 |
 
 | <img src="imgs/SDI_mlp.png" alt="SDI MLP Results" width="500px"> | <img src="imgs/SDI_ftformer.png" alt="SDI FtFormer Results" width="500px"> | <img src="imgs/SDI_resnet.png" alt="SDI ResNet Results" width="500px"> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
