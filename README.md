@@ -107,5 +107,5 @@ This repository includes the experimental setup, code, and results for the rebut
 ![Pointy_Nose nose Results](imgs/cv/Pointy_Nose_nose_metrics.png)
 *g This graph illustrates the resulted evaluation metrics of unlearning the nose feature for Pointy_Nose classification"*
 
-## Figure 1: Results of Advanced Model Architectures with the Most and Least Important Features for Unlearning
-![](imgs/cv_unlearn_demo.png)
+### Figure 4: A Graph Demonstration for Unlearning with CelebA Dataset 
+![](imgs/example.png)
