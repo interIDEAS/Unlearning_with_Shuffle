@@ -1,7 +1,7 @@
 This repository includes the experimental setup, code, and results for the rebuttal of our paper \#13751, "**Efficient Feature Unlearning Using Shuffling: Algorithm and Theoretical Analysis.**". It offers additional details addressing three key aspects raised by the reviewers:
 
 ## Figure 1: Results of Advanced Model Architectures with the Most and Least Important Features for Unlearning
-
+### CREDIT Dataset
 | <img src="imgs_important_feature/TRI_mlp_CREDIT.png" alt="TRI MLP Results" width="500px"> | <img src="imgs_important_feature/TRI_ftformer_CREDIT.png" alt="TRI FtFormer Results" width="500px"> | <img src="imgs_important_feature/TRI_resnet_CREDIT.png" alt="TRI ResNet Results" width="500px"> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |                   <em>TRI MLP Results for Top Two Important (identified by Shapley values) Features</em>                   |                <em>TRI FtFormer Results for Top Two Important(identified by Shapley values) Features</em>                 |                 <em>TRI ResNet Results for Top Two Important(identified by Shapley values) Features</em>                  |
@@ -22,7 +22,7 @@ This repository includes the experimental setup, code, and results for the rebut
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |                   <em>SRI MLP Results for Top Two Important (identified by Shapley values) Features</em>                   |                <em>SRI FtFormer Results for Top Two Important (identified by Shapley values) Features</em>                 |                 <em>SRI ResNet Results for Top Two Important (identified by Shapley values) Features</em>                  |
 
-
+### CALI Dataset
 | <img src="imgs_important_feature/TRI_mlp_CALI.png" alt="TRI MLP Results" width="500px"> | <img src="imgs_important_feature/TRI_ftformer_CALI.png" alt="TRI FtFormer Results" width="500px"> | <img src="imgs_important_feature/TRI_resnet_CALI.png" alt="TRI ResNet Results" width="500px"> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |                   <em>TRI MLP Results for Top Two Important (identified by Shapley values) Features</em>                   |                <em>TRI FtFormer Results for Top Two Important(identified by Shapley values) Features</em>                 |                 <em>TRI ResNet Results for Top Two Important(identified by Shapley values) Features</em>                  |
