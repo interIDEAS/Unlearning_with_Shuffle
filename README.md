@@ -1,21 +1,4 @@
 This repository includes the experimental setup, code, and results for the rebuttal of our paper \#13751, "**Efficient Feature Unlearning Using Shuffling: Algorithm and Theoretical Analysis.**". It offers additional details addressing three key aspects raised by the reviewers:
-- [*Model Complexity*](#details-for-responses-to-simplicity-of-mlp-model-and-choices-of-unlearned-feature): In response to Reviewers \#gLFb and \#F51p, we have integrated more advanced neural architectures for unlearning tabular datasets. We follow the paper "**Revisiting Deep Learning Models for Tabular Data**" levearging *ResNet* and the *FT-Transformer* and published in NeurIPS 2021, which have been shown to be effective for tabular data.
-- [*Feature Selection and Unlearning Impact*](#details-for-responses-to-simplicity-of-mlp-model-and-choices-of-unlearned-feature): As suggested by Reviewers \#gLFb and \#F51p, we have analyzed the impact of unlearning by selecting both the two most important and the two least important features based on their Shapley value rankings. Additionally, per Reviewer \#gLFb's suggestion, we have evaluated the robustness of our unlearning method when removing features that are highly correlated with others.
-- [*Applicability to Complex Tasks*](#details-for-responses-to-potential-in-complex-tasks): In response to Reviewer \#gLFb, we have extended our unlearning method to an image classification task using **CelebA**, a large-scale dataset featuring over 200K images, originally introduced in "Deep Learning Face Attributes in the Wild" (ICCV 2015).
-
-The Table of Contents of this repository is shown below 
-- [Details for Responses to *Simplicity of MLP model* and *Choices of unlearned feature*](#details-for-responses-to-simplicity-of-mlp-model-and-choices-of-unlearned-feature)
-  - [Advanced Model Architectures](#advanced-model-architectures)
-  - [Unlearning Features with Different Feature Importance](#unlearning-features-with-different-feature-importance)
-  - [Unlearning Features that are Highly Correlated with Other Features](#unlearning-features-that-are-highly-correlated-with-other-features)
-- [Details for Responses to *Potential in complex tasks*](#details-for-responses-to-potential-in-complex-tasks)
-  - [Dataset Overview](#dataset-overview)
-  - [Model Modification](#model-modification)
-  - [Experiments](#experiments)
-
-
-
-# Details for Responses to *Simplicity of MLP model* and *Choices of unlearned feature*
 
 ## Advanced Model Architectures
 
@@ -67,7 +50,7 @@ Each graph below presents the aggregated and averaged results across all dataset
 
 | <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="500px"> | <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="500px"> | <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="500px"> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|                   <em>TRI MLP Results</em>                   |                <em>TRI FtFormer Results</em>                 |                 <em>TRI ResNet Results</em>                  |
+|                   <em>TRI MLP Results for Top Two Important Features</em>                   |                <em>TRI FtFormer Results for Top Two Important Features</em>                 |                 <em>TRI ResNet Results for Top Two Important Features</em>                  |
 
 | <img src="imgs/EI_mlp.png" alt="EI MLP Results" width="500px"> | <img src="imgs/EI_ftformer.png" alt="EI FtFormer Results" width="500px"> | <img src="imgs/EI_resnet.png" alt="EI ResNet Results" width="500px"> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
