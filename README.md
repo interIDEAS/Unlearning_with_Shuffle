@@ -1,6 +1,6 @@
 This repository includes the experimental setup, code, and results for the rebuttal of our paper \#13751, "**Efficient Feature Unlearning Using Shuffling: Algorithm and Theoretical Analysis.**". It offers additional details addressing three key aspects raised by the reviewers:
 
-## Figure 1: : Advanced Model Architectures with the Most Important Features for Unlearning
+## Figure 1: : Results of Advanced Model Architectures with the Most and Least Important Features for Unlearning
 
 | <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="500px"> | <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="500px"> | <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="500px"> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
@@ -22,7 +22,7 @@ This repository includes the experimental setup, code, and results for the rebut
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |                   <em>SRI MLP Results for Top Two Important (identified by Shapley values) Features</em>                   |                <em>SRI FtFormer Results for Top Two Important (identified by Shapley values) Features</em>                 |                 <em>SRI ResNet Results for Top Two Important (identified by Shapley values) Features</em>                  |
 
-
+*These results represent the aggregated outcome across all eight datasets.*
 
 ## Figure 2: Advanced Model Architectures with the Highly Correlated  Features for Unlearning
 
