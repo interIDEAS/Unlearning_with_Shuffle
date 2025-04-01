@@ -42,7 +42,7 @@ This repository includes the experimental setup, code, and results for the rebut
 
 
 
-# Figure 3: Implementing Unlearning for Image Classification Tasks using the CelebA Dataset.
+## Figure 3: Implementing Unlearning for Image Classification Tasks using the CelebA Dataset.
 ![](imgs/example.png)
 ![Big_Nose nose Results](imgs/cv/Big_Nose_nose_metrics.png)
 *(a) This graph illustrates the resulted evaluation metrics of unlearning the nose feature for Big_Nose classification.*
@@ -64,4 +64,3 @@ This repository includes the experimental setup, code, and results for the rebut
 
 ![Pointy_Nose nose Results](imgs/cv/Pointy_Nose_nose_metrics.png)
 *g This graph illustrates the resulted evaluation metrics of unlearning the nose feature for Pointy_Nose classification"*
-
