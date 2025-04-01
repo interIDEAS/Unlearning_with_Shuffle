@@ -10,47 +10,9 @@ In addition to MLP, we have incorporated **ResNet** and **FT-Transformer** for t
 [FT-Transformer reference] Yury Gorishniy, Ivan Rubachev, Valentin Khrulkov, and Artem Babenko. 2021. Revisiting deep learning models for tabular data. In Proceedings of the 35th International Conference on Neural Information Processing Systems (NIPS '21). Curran Associates Inc., Red Hook, NY, USA, Article 1447, 18932–18943.
 
 
-
-## Unlearning Features with Different Feature Importance
-
-In the single-feature unlearning of the original manuscript, we selected the most important features for unlearning based on their Shapley values, computed using the ``shap`` package on the original model (prior to unlearning) to determine feature importance.
-
-
-To further validate the effectiveness of our proposed method, we conducted additional experiments on each tabular dataset, focusing on:
-
-- The **two most influential features**, as identified by their Shapley values.
-- The **two least influential features**, to assess the impact of unlearning less critical information.
-
-Each selected feature was unlearned across three different neural architectural frameworks:
-
-1. MLP (as used in the original experiments)
-2. ResNet
-3. FT-Transformer (referred to as FtFormer below)
-
-The evaluation metrics remain consistent with the original experiments, including:
-
-1. Test Retention Index (TRI)
-2. Efficiency Index (EI)
-3. Robustness Against Shuffling Index (RASI)
-4. SHAP Rentention Index (SRI)
-5. SHAP Distance-To-Zero Index (SDI)
-
-Experimental results are presented below.
-
-
-### Results and Graphs
-
-Each graph below presents the aggregated and averaged results across all datasets. For detailed results on each dataset, please refere to the ``results`` folder. Also, code for loading and analyzing these results is provided in ``evaluation_rebuttal.ipynb``.
-
-
-**Key Findings: Our algorithm demonstrates exceptional efficiency in unlearning both the most and least influential features. This effectiveness is consistently observed across different architectural frameworks, including MLP, ResNet, and FtFormer.**
-
-
-
-
 | <img src="imgs/TRI_mlp.png" alt="TRI MLP Results" width="500px"> | <img src="imgs/TRI_ftformer.png" alt="TRI FtFormer Results" width="500px"> | <img src="imgs/TRI_resnet.png" alt="TRI ResNet Results" width="500px"> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|                   <em>TRI MLP Results for Top Two Important Features</em>                   |                <em>TRI FtFormer Results for Top Two Important Features</em>                 |                 <em>TRI ResNet Results for Top Two Important Features</em>                  |
+|                   <em>TRI MLP Results for Top Two Important (identified by Shapley values) Features</em>                   |                <em>TRI FtFormer Results for Top Two Important(identified by Shapley values) Features</em>                 |                 <em>TRI ResNet Results for Top Two Important(identified by Shapley values) Features</em>                  |
 
 | <img src="imgs/EI_mlp.png" alt="EI MLP Results" width="500px"> | <img src="imgs/EI_ftformer.png" alt="EI FtFormer Results" width="500px"> | <img src="imgs/EI_resnet.png" alt="EI ResNet Results" width="500px"> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
