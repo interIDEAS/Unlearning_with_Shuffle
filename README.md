@@ -43,75 +43,9 @@ This repository includes the experimental setup, code, and results for the rebut
 
 
 # Details for Responses to *Potential in complex tasks*
-
-## Dataset Overview
-
-CelebFaces Attributes Dataset (CelebA) is an extensive collection of over 200K celebrity images, each annotated with 40 binary facial attributes. The dataset captures a wide range of pose variations and background complexities. It offers remarkable diversity and volume, featuring 10,177 unique identities, 202,599 face images, and detailed annotations that include 5 landmark locations along with 40 binary attribute labels per image.
-
-
-[CelebA reference] Z. Liu, P. Luo, X. Wang and X. Tang, "Deep Learning Face Attributes in the Wild," in 2015 IEEE International Conference on Computer Vision (ICCV), Santiago, Chile, 2015, pp. 3730-3738, doi: 10.1109/ICCV.2015.425.
-
-## Model Modification
-
-For the image classification task, we leverage the ViT as backbone and MLP as classifier head.
-
-[ViT reference] Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, Jakob Uszkoreit, Neil Houlsby:
-An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale. ICLR 2021
-
-## Experiments
-
-In tabular datasets, each column represents a distinct feature, making feature selection and manipulation explicit. In contrast, for computer vision tasks, features are visually embedded within images and not explicitly structured as separate variables. For instance, in the CelebA dataset, facial attributes such as the nose, eyes, and gender are inherently captured within each image rather than existing as distinct columns.
-
-To extend our unlearning method to the image classification setting, we focus on selectively unlearning specific visual features of the CelebA dataset, including:
-- Nose
-- Eye
-- Nose and Eye
-
-The classification tasks involve predicting the following labels:
-- Gender (Male or Female)
-- Big Nose
-- Pointy Nose
-- Eyeglasses
-- Narrow Eyes
-
-The detailed descriptions of the performed unlearning tasks are provided below
-
-- **Unlearn Nose (Label Gender):**  
-  Remove extraneous background details using the annotated nose locations.
-- **Unlearn Eyes (Label Gender):**  
-  Exclude the eye regions based on the provided annotations.
-- **Unlearn Noise+Eyes (Label Gender):**  
-  Simultaneously remove both the background noise and the eye regions.
-- **Unlearn Nose (Label Big Nose):**  
-  Remove nose features corresponding to a big nose.
-- **Unlearn Nose (Label Pointy Nose):**  
-  Remove nose features corresponding to a pointy nose.
-- **Unlearn Eyes (Label Eyeglasses):**  
-  Remove eye features associated with eyeglasses.
-- **Unlearn Eyes (Label Narrow Eyes):**  
-  Remove eye features associated with narrow eyes.
-
-
-The following example illustrates how an original image is processed for our unlearning method and retrain-from-scratch model:
-
-1. Shuffled Nose Feature: The nose region is shuffled while preserving the overall structure of the image.
-2. Masked Nose Feature: The nose region is masked to remove its influence on the model.
-
-
-
 ![](imgs/example.png)
-
-
-### Results and Graphs
-
-Experimental results of the above seven image classification tasks are shown below. For detailed information on each task, please refer to the ``results_cv`` folder. Also, codes to load these dataset results are provided in ``evaluation_rebuttal_cv.ipynb``.
-
-**Key Findings: Our algorithm demonstrates exceptional efficiency in unlearning various visual features in image classification tasks, outperforming both baseline methods..**
-
-
 ![Big_Nose nose Results](imgs/cv/Big_Nose_nose_metrics.png)
 *Description: This graph illustrates the resulted evaluation metrics of unlearning the nose feature for Big_Nose classification.*
-
 
 ![Eyeglasses eye Results](imgs/cv/Eyeglasses_eye_metrics.png)
 *Description: This graph illustrates the resulted evaluation metrics of unlearning the eye feature for Eyeglasses classification."*
@@ -123,7 +57,7 @@ Experimental results of the above seven image classification tasks are shown bel
 *Description: This graph illustrates the resulted evaluation metrics of unlearning the nose feature for Gender classification."*
 
 ![Male noseeye Results](imgs/cv/Male_noseeye_metrics.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the nose+eye feature for Gender classification"*
+*Description: This graph illustrates the resulted evaluation metrics of unlearning ()the nose+eye feature for Gender classification"*
 
 ![Narrow_Eyes eye Results](imgs/cv/Narrow_Eyes_eye_metrics.png)
 *Description: This graph illustrates the resulted evaluation metrics of unlearning the eye feature for Narrow_Eyes classification."*
@@ -131,14 +65,3 @@ Experimental results of the above seven image classification tasks are shown bel
 ![Pointy_Nose nose Results](imgs/cv/Pointy_Nose_nose_metrics.png)
 *Description: This graph illustrates the resulted evaluation metrics of unlearning the nose feature for Pointy_Nose classification"*
 
-
-<!-- # How to Run Experiments
-
-To replicate our experiments or to run new experiments using the setup provided, follow the instructions below:
-
-```bash
-# Clone the repository
-git clone https://github.com/your-repository-url.git
-
-```
- -->
