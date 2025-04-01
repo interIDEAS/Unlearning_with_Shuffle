@@ -24,44 +24,44 @@ This repository includes the experimental setup, code, and results for the rebut
 
 
 
-## Figure 2: : Advanced Model Architectures with the Highly Correlated  Features for Unlearning
+## Figure 2: Advanced Model Architectures with the Highly Correlated  Features for Unlearning
 
 ![CALI Latitude Results](imgs/CALI_Latitude.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'Latitude'(Correlation for``Latitude`` and ``Longitude`` is 0.925) feature using the MLP, ResNet, and FtFormer models.*
+*(a) This graph illustrates the resulted evaluation metrics of unlearning the 'Latitude'(Correlation for``Latitude`` and ``Longitude`` is 0.925) feature using the MLP, ResNet, and FtFormer models.*
 ![CALI Longitude Results](imgs/CALI_Longtitude.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'Longtitude' (Correlation for``Latitude`` and ``Longitude`` is 0.925) feature using the MLP, ResNet, and FtFormer models.*
+*(b) This graph illustrates the resulted evaluation metrics of unlearning the 'Longtitude' (Correlation for``Latitude`` and ``Longitude`` is 0.925) feature using the MLP, ResNet, and FtFormer models.*
 ![CALI AveBedrms Results](imgs/CALI_Avgbed.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'AveBedrms' (Correlation for``AveRooms` and `AveBedrms`is 0.848)  feature using the MLP, ResNet, and FtFormer models.*
+*(c) This graph illustrates the resulted evaluation metrics of unlearning the 'AveBedrms' (Correlation for``AveRooms` and `AveBedrms`is 0.848)  feature using the MLP, ResNet, and FtFormer models.*
 ![CREDIT NumberOfTimes90DaysLate Results](imgs/CREDIT_90.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'NumberOfTimes90DaysLate' (Correlation for - `NumberOfTimes90DaysLate` and `NumberOfTime60-89DaysPastDueNotWorse`is 0.991) feature using the MLP, ResNet, and FtFormer models.*
+*(d) This graph illustrates the resulted evaluation metrics of unlearning the 'NumberOfTimes90DaysLate' (Correlation for - `NumberOfTimes90DaysLate` and `NumberOfTime60-89DaysPastDueNotWorse`is 0.991) feature using the MLP, ResNet, and FtFormer models.*
 ![CREDIT NumberOfTime30-59DaysPastDueNotWorse Results](imgs/CREDIT_3059.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'NumberOfTime30-59DaysPastDueNotWorse' (Correlation for  `NumberOfTime30-59DaysPastDueNotWorse` and `NumberOfTime60-89DaysPastDueNotWorse` is 0.988) feature using the MLP, ResNet, and FtFormer models.*
+*(e): This graph illustrates the resulted evaluation metrics of unlearning the 'NumberOfTime30-59DaysPastDueNotWorse' (Correlation for  `NumberOfTime30-59DaysPastDueNotWorse` and `NumberOfTime60-89DaysPastDueNotWorse` is 0.988) feature using the MLP, ResNet, and FtFormer models.*
 ![MAGIC_TELE fSize Results](imgs/TETL.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'fSize'  (Correlation for `fSize`: and `fConc` is 0.847) feature using the MLP, ResNet, and FtFormer models.*
+*(f) This graph illustrates the resulted evaluation metrics of unlearning the 'fSize'  (Correlation for `fSize`: and `fConc` is 0.847) feature using the MLP, ResNet, and FtFormer models.*
 
 
 
 
-# Details for Responses to *Potential in complex tasks*
+# Figure 3: Implementing Unlearning for Image Classification Tasks using the CelebA Dataset.
 ![](imgs/example.png)
 ![Big_Nose nose Results](imgs/cv/Big_Nose_nose_metrics.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the nose feature for Big_Nose classification.*
+*(a) This graph illustrates the resulted evaluation metrics of unlearning the nose feature for Big_Nose classification.*
 
 ![Eyeglasses eye Results](imgs/cv/Eyeglasses_eye_metrics.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the eye feature for Eyeglasses classification."*
+*(b) This graph illustrates the resulted evaluation metrics of unlearning the eye feature for Eyeglasses classification."*
 
 ![Male eye Results](imgs/cv/Male_eye_metrics.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the eye feature for Gender classification."*
+*(c) This graph illustrates the resulted evaluation metrics of unlearning the eye feature for Gender classification."*
 
 ![Male nose Results](imgs/cv/Male_nose_metrics.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the nose feature for Gender classification."*
+*(d) This graph illustrates the resulted evaluation metrics of unlearning the nose feature for Gender classification."*
 
 ![Male noseeye Results](imgs/cv/Male_noseeye_metrics.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning ()the nose+eye feature for Gender classification"*
+*(e) This graph illustrates the resulted evaluation metrics of unlearning ()the nose+eye feature for Gender classification"*
 
 ![Narrow_Eyes eye Results](imgs/cv/Narrow_Eyes_eye_metrics.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the eye feature for Narrow_Eyes classification."*
+*(f) This graph illustrates the resulted evaluation metrics of unlearning the eye feature for Narrow_Eyes classification."*
 
 ![Pointy_Nose nose Results](imgs/cv/Pointy_Nose_nose_metrics.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the nose feature for Pointy_Nose classification"*
+*g This graph illustrates the resulted evaluation metrics of unlearning the nose feature for Pointy_Nose classification"*
 
