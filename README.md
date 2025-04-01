@@ -27,17 +27,17 @@ This repository includes the experimental setup, code, and results for the rebut
 ## Figure 2: : Advanced Model Architectures with the Highly Correlated  Features for Unlearning
 
 ![CALI Latitude Results](imgs/CALI_Latitude.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'Latitude'(Correlation for``Latitude`` and ``Longitude`` is 0.925) feature using the MLP, ResNet, and FtFormer models. Our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."*
+*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'Latitude'(Correlation for``Latitude`` and ``Longitude`` is 0.925) feature using the MLP, ResNet, and FtFormer models.*
 ![CALI Longitude Results](imgs/CALI_Longtitude.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'Longtitude' (Correlation for``Latitude`` and ``Longitude`` is 0.925) feature using the MLP, ResNet, and FtFormer models. Our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."*
+*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'Longtitude' (Correlation for``Latitude`` and ``Longitude`` is 0.925) feature using the MLP, ResNet, and FtFormer models.*
 ![CALI AveBedrms Results](imgs/CALI_Avgbed.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'AveBedrms' (Correlation for``AveRooms` and `AveBedrms`is 0.848)  feature using the MLP, ResNet, and FtFormer models. Our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."*
+*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'AveBedrms' (Correlation for``AveRooms` and `AveBedrms`is 0.848)  feature using the MLP, ResNet, and FtFormer models.*
 ![CREDIT NumberOfTimes90DaysLate Results](imgs/CREDIT_90.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'NumberOfTimes90DaysLate' (Correlation for - `NumberOfTimes90DaysLate` and `NumberOfTime60-89DaysPastDueNotWorse`is 0.991) feature using the MLP, ResNet, and FtFormer models. Our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."s.*
+*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'NumberOfTimes90DaysLate' (Correlation for - `NumberOfTimes90DaysLate` and `NumberOfTime60-89DaysPastDueNotWorse`is 0.991) feature using the MLP, ResNet, and FtFormer models.*
 ![CREDIT NumberOfTime30-59DaysPastDueNotWorse Results](imgs/CREDIT_3059.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'NumberOfTime30-59DaysPastDueNotWorse' (Correlation for  `NumberOfTime30-59DaysPastDueNotWorse` and `NumberOfTime60-89DaysPastDueNotWorse` is 0.988) feature using the MLP, ResNet, and FtFormer models. Our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."*
+*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'NumberOfTime30-59DaysPastDueNotWorse' (Correlation for  `NumberOfTime30-59DaysPastDueNotWorse` and `NumberOfTime60-89DaysPastDueNotWorse` is 0.988) feature using the MLP, ResNet, and FtFormer models.*
 ![MAGIC_TELE fSize Results](imgs/TETL.png)
-*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'fSize'  (Correlation for `fSize`: and `fConc` is 0.847) feature using the MLP, ResNet, and FtFormer models. Our model's performance is consistent with observations reported in the main paper. It demonstrates robust performance across all evaluation criteria."*
+*Description: This graph illustrates the resulted evaluation metrics of unlearning the 'fSize'  (Correlation for `fSize`: and `fConc` is 0.847) feature using the MLP, ResNet, and FtFormer models.*
 
 
 
